@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SingleEventCollectionViewCell" id="nnf-AO-2um" customClass="SingleEventCollectionViewCell" customModule="LifeLines" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="743"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="743"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVw-dy-3Db">
+                        <rect key="frame" x="0.0" y="0.0" width="382" height="743"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F2C-id-4o9">
+                                <rect key="frame" x="0.0" y="0.0" width="382" height="743"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="F2C-id-4o9" secondAttribute="trailing" id="06A-Kw-ekL"/>
+                            <constraint firstItem="F2C-id-4o9" firstAttribute="leading" secondItem="uVw-dy-3Db" secondAttribute="leading" id="1pd-EX-MNK"/>
+                            <constraint firstAttribute="bottom" secondItem="F2C-id-4o9" secondAttribute="bottom" id="lkc-wq-T1N"/>
+                            <constraint firstItem="F2C-id-4o9" firstAttribute="top" secondItem="uVw-dy-3Db" secondAttribute="top" id="p7I-p1-Q3p"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="uVw-dy-3Db" secondAttribute="bottom" id="9lj-Ef-Wg5"/>
+                <constraint firstAttribute="trailing" secondItem="uVw-dy-3Db" secondAttribute="trailing" id="YgV-ci-wUl"/>
+                <constraint firstItem="uVw-dy-3Db" firstAttribute="top" secondItem="nnf-AO-2um" secondAttribute="top" id="fTr-cZ-fX0"/>
+                <constraint firstItem="uVw-dy-3Db" firstAttribute="leading" secondItem="nnf-AO-2um" secondAttribute="leading" id="oVK-UR-ikB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="xTK-jl-rbO"/>
+            <size key="customSize" width="382" height="743"/>
+            <connections>
+                <outlet property="tableView" destination="F2C-id-4o9" id="gvv-mc-Dmj"/>
+            </connections>
+            <point key="canvasLocation" x="50.724637681159422" y="313.72767857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>

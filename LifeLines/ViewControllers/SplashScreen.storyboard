@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WDW-G4-rby">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="WfO-Em-yk8">
+            <objects>
+                <viewController id="WDW-G4-rby" customClass="SplashScreenViewController" customModule="LifeLines" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HMd-JH-NYs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="boe-PR-vvO">
+                                <rect key="frame" x="54" y="355.5" width="306" height="51"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.37647058820000001" green="0.35294117650000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="boe-PR-vvO" firstAttribute="centerY" secondItem="HMd-JH-NYs" secondAttribute="centerY" multiplier="0.85" id="J6O-UF-n09"/>
+                            <constraint firstItem="boe-PR-vvO" firstAttribute="leading" secondItem="i9r-ch-kqo" secondAttribute="leading" constant="54" id="R31-FD-OsI"/>
+                            <constraint firstItem="i9r-ch-kqo" firstAttribute="trailing" secondItem="boe-PR-vvO" secondAttribute="trailing" constant="54" id="qAs-7P-OFa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i9r-ch-kqo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RYZ-Oc-ZvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="212" height="51"/>
+    </resources>
+</document>

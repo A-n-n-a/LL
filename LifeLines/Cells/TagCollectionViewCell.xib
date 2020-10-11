@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagCollectionViewCell" id="jkE-gf-YLM" customClass="TagCollectionViewCell" customModule="LifeLines" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="99" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="99" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKg-VS-2tD">
+                        <rect key="frame" x="0.0" y="0.0" width="99" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqE-Zx-2O8">
+                        <rect key="frame" x="4" y="4" width="91" height="42"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" red="0.37647058820000001" green="0.35294117650000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="FKg-VS-2tD" firstAttribute="leading" secondItem="jkE-gf-YLM" secondAttribute="leading" id="0Rv-85-cjE"/>
+                <constraint firstItem="FqE-Zx-2O8" firstAttribute="centerX" secondItem="jkE-gf-YLM" secondAttribute="centerX" id="EX2-D3-n6G"/>
+                <constraint firstItem="FqE-Zx-2O8" firstAttribute="centerY" secondItem="jkE-gf-YLM" secondAttribute="centerY" id="S8V-EX-uX3"/>
+                <constraint firstItem="FKg-VS-2tD" firstAttribute="leading" secondItem="FqE-Zx-2O8" secondAttribute="leading" constant="-4" id="SXw-hk-c8d"/>
+                <constraint firstAttribute="bottom" secondItem="FKg-VS-2tD" secondAttribute="bottom" id="X6c-44-Nxs"/>
+                <constraint firstItem="FKg-VS-2tD" firstAttribute="top" secondItem="FqE-Zx-2O8" secondAttribute="top" constant="-4" id="YP1-Ef-5fQ"/>
+                <constraint firstAttribute="trailing" secondItem="FKg-VS-2tD" secondAttribute="trailing" id="cTp-fJ-frG"/>
+                <constraint firstItem="FKg-VS-2tD" firstAttribute="top" secondItem="jkE-gf-YLM" secondAttribute="top" id="jlb-PJ-VcL"/>
+                <constraint firstItem="FKg-VS-2tD" firstAttribute="trailing" secondItem="FqE-Zx-2O8" secondAttribute="trailing" constant="4" id="sms-MA-5pW"/>
+                <constraint firstItem="FKg-VS-2tD" firstAttribute="bottom" secondItem="FqE-Zx-2O8" secondAttribute="bottom" constant="4" id="wyi-Wo-1QC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="6ok-b8-JMi"/>
+            <size key="customSize" width="99" height="50"/>
+            <connections>
+                <outlet property="container" destination="FKg-VS-2tD" id="npO-DA-alg"/>
+                <outlet property="title" destination="FqE-Zx-2O8" id="EYe-jB-YK8"/>
+            </connections>
+            <point key="canvasLocation" x="657.24637681159425" y="79.6875"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Amplitude",
+        "repositoryURL": "https://github.com/amplitude/Amplitude-iOS",
+        "state": {
+          "branch": null,
+          "revision": "908df62a67bc1816d3eae82ce0ce8a1c0c1131ac",
+          "version": "5.1.0"
+        }
+      },
+      {
+        "package": "Facebook",
+        "repositoryURL": "https://github.com/facebook/facebook-ios-sdk",
+        "state": {
+          "branch": null,
+          "revision": "cdb8c71fb7f22b4f1af05c21246c12c1aa49f89e",
+          "version": "6.5.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
